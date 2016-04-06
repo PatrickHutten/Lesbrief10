@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ///
 /// Phantom by HTML5 UP
 /// html5up.net | @n33co
@@ -35,4 +36,43 @@
 				}
 			}
 
+=======
+///
+/// Phantom by HTML5 UP
+/// html5up.net | @n33co
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Basic */
+
+	// MSIE: Required for IEMobile.
+		@-ms-viewport {
+			width: device-width;
+		}
+
+	// MSIE: Prevents scrollbar from overlapping content.
+		body {
+			-ms-overflow-style: scrollbar;
+		}
+
+	// Ensures page width is always >=320px.
+		@include breakpoint(xsmall) {
+			html, body {
+				min-width: 320px;
+			}
+		}
+
+	body {
+		background: _palette(bg);
+
+		// Prevents animation/transition "flicker" on page load.
+		// Automatically added/removed by js/main.js.
+			&.is-loading {
+				*, *:before, *:after {
+					@include vendor('animation', 'none !important');
+					@include vendor('transition', 'none !important');
+				}
+			}
+
+>>>>>>> c21c1f7ee46cef780dbdc73aa6fadd0db97ecefd
 	}
